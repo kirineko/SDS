@@ -10,7 +10,6 @@ typedef struct sds
     char buf[];
 } sds;
 
-
 sds* sdsnew(const char *init)
 {
     int length = sizeof(sds) + strlen(init) + 1;
